@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0 auto;
+    gap: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.topo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    align-content: center;
+    font-size: larger;
+    text-align: center;
+}
+.topo:hover {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+body {
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+#areas {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkolivegreen;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0; 
+    padding: 0;
+}
+
+button {
+    background-color: darkolivegreen;
+    color: whitesmoke;
+    font-size: 15px;
+    border-radius: 5rem;
+    border: 2px solid whitesmoke; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(141, 160, 107);
+    color: white;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+#toggle_mode {
+    height: 1rem;
+    width: 1rem;
+    border: solid;
+    border-color: rgb(104, 124, 69);
+    border-radius: 100%;
+    margin-left: 0.5rem; 
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #areas {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    ul {
+        flex-direction: column; 
+        gap: 0.5rem; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    button {
+        width: max-content;
+    }
+}
+#container {
+    color: black;
+    padding: 1rem;
+}
+.titulo {
+    font-size: 3rem;
+}
+img {
+    image-rendering: optimizeQuality;
+    display: flex;
+    width: 40%;
+    height: 40%;
+}
+.series {
+    width: 35%;
+    list-style: none;
+    padding: 1rem;
+    gap: 2.5rem;
+    display: inline-flex;
+    border-radius: 10%;
+}
+.select_serie {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: medium;
+    background-color: darkolivegreen;
+    border-radius: 10%;
+}
+.select_serie:hover {
+    color: wheat;
+    font-size: 16px;
+    background-color: rgb(141, 160, 107);
+}
+.btn_serie {
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 10%;
+}
+.btn_serie:hover {
+    color: wheat;
+    background-color: transparent;
+}
+#serie1, #serie2, #serie3 {
+    font-size: 2rem;
+    background-color: darkolivegreen;
+    color: white;
+    width: 25%;
+    border-radius: 0.4rem;
+    text-align: center;
+}
+.materia {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.cards, .cards_uece, .cards_enem, .cards_ita {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.cards_uece {
+    background-color: rgb(242, 255, 242);
+}
+.cards_enem {
+    background-color: rgb(242, 239, 255);
+}
+.cards_ita {
+    background-color: rgb(239, 244, 255);
+}
+.link_card {
+    text-decoration: none;
+    color: black;
+}
+.link_card:hover {
+    color: black;
+}
+.link_card:active {
+    color: black;
+}
+.card, .card_uece, .card_enem, .card_ita {
+    align-content: center;
+    text-align: center;
+    width: 10rem;
+    height: auto;
+    margin: 1rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.card_uece {
+    background-color: rgb(218, 238, 214);
+}
+.card_enem {
+    background-color: rgb(221, 214, 238);
+}
+.card_ita {
+    background-color: rgb(214, 221, 238);
+}
+.card:hover {
+    box-shadow: 0 0 15px 5px rgba(184, 184, 184, 0.8);
+    transform: scale(1.03);
+    transition: 1s ease-in-out;
+}
+.card_uece:hover {
+    box-shadow: 0 0 15px 5px rgba(154, 255, 154, 0.8); 
+    transform: scale(1.03);
+    transition: 1s ease-in-out;
+}
+.card_enem:hover {
+    box-shadow: 0 0 15px 5px rgba(218, 162, 255, 0.8); 
+    transform: scale(1.03);
+    transition: 1s ease-in-out;
+}
+.card_ita:hover {
+    box-shadow: 0 0 15px 5px rgba(162, 213, 255, 0.8); 
+    transform: scale(1.03);
+    transition: 1s ease-in-out;
+}
+.nome {
+    font-size: 1rem;
+    text-decoration: underline;
+    margin: 5px;
+}
+.descricao {
+    font-size: 0.8rem;
+}
+.logo {
+    width: 40%;
+    height: 27%;
+}
+.acess {
+    width: 80%;
+    height: 45%;
+    margin: 15px;
+}
+.acess:hover {
+    cursor: pointer;
+    background-color: rgb(141, 160, 107);
+    color: white;
+    border: white;
+    height: 15%;
+}
+.vestibular_uece, .vestibular_enem, .vestibular_ita {
+    font-size: 2rem;
+    background-color: rgb(106, 126, 69);
+    color: white;
+    text-align: center;
+}
+.vestibular_enem {
+    background-color: rgb(94, 69, 126);
+}
+.vestibular_ita {
+    background-color: rgb(69, 105, 126);
+}
+.secret {
+    background-color: rgb(218, 238, 214);
+    color: darkslategray;
+    display: inline-flex;
+    font-size: 0.65rem;
+    height: 1.4rem;
+    width: 1.2rem;
+}
+.lista_materias {
+    text-decoration: none;
+    list-style: circle;
+    display: list-item;
+    text-align: left;
+}
+.frase {
+    font-family: 'fantasy';
+    font-size: 1rem;
+}
+.mensagem {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+}
